@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Yaldevi:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 :root {
   --gray: #494949;
   --blue: #06cfcc;
@@ -10,7 +11,7 @@
   --black: #1a222a;
   --primary-font: "Oswald", sans-serif;
   /*--primary-font: "Roboto", sans-serif;*/
-  --second--font: "Yaldevi", sans-serif;
+  --second--font: "Montserrat", sans-serif;
   --atom-size: 180px;
   --atom-color-hex: #00d8ff;
   --atom-color-rgb: 0, 216, 255;
@@ -27,11 +28,9 @@
 *:before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 div#gatsby-focus-wrapper div {
   max-width: 100% !important;
-  padding: 0;
 }
 h1,
 h2,
@@ -84,9 +83,8 @@ header {
 }
 
 main {
-  background: linear-gradient(to bottom, #ffffff 0%, #dddee1 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 10%);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 10vh 0 80vh;
   position: relative;
   text-align: center;
   overflow: hidden;
@@ -385,7 +383,7 @@ a:hover {
   flex-wrap: wrap;
 }
 .item--h {
-  flex: 1 50%;
+  flex: 1 30%;
   text-align: left;
   padding: 20px 100px;
   position: relative;
@@ -394,8 +392,13 @@ a:hover {
   text-align: center;
   justify-content: center;
 }
+.txt {
+  margin-top: 40px;
+}
 .txt-desc {
   font-size: 1.4rem;
+  color: #fff;
+  font-weight: 900;
 }
 .wrap-menu {
   overflow: hidden;
@@ -421,7 +424,7 @@ a:hover {
 .wrap-menu .item--menu .sub-itemm {
   margin: 0 10px;
   font-family: var(--second--font);
-  padding-top: 20px;
+  padding-top: 20px !important;
 }
 .sub-itemm span {
   color: #fff;
@@ -438,7 +441,7 @@ a:hover {
 .key-word {
   font-family: var(--primary-font);
   color: var(--blue);
-  font-size: 1.9rem;
+  font-size: 1.4rem;
   position: absolute;
   width: 150px;
   line-height: 1;
@@ -451,11 +454,11 @@ a:hover {
 }
 .key-word:nth-child(2) {
   top: 40%;
-  left: 10%;
+  left: 0;
 }
 .key-word:nth-child(3) {
   top: 40%;
-  right: 10%;
+  right: 0;
 }
 section {
   padding: 20px 100px;
@@ -476,6 +479,14 @@ section {
   box-shadow: 0px 0px 25px 0px rgb(170 170 170 / 25%);
   position: relative;
 }
+#our-services p {
+  color: var(--gray);
+}
+
+.item-card h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
 .item-card svg {
   text-align: right;
 }
@@ -494,12 +505,12 @@ section {
   text-align: center;
   color: var(--gray);
   font-family: var(--primary-font);
-  position: absolute;
-  bottom: 20px;
   font-size: 1rem;
-  padding: 10px 30px;
+  padding: 10px;
+  width: 200px;
   text-align: center;
   box-shadow: 0px 0px 25px 0px rgb(170 170 170 / 25%);
+  margin-top: 30px;
 }
 .btn-call:hover {
   background-color: var(--gray);
@@ -535,7 +546,6 @@ section {
 /* start of our services section */
 
 #our-services {
-  background: #f6f6f6;
   min-height: 100vh;
   padding-top: 25vh;
 }
@@ -692,7 +702,7 @@ section {
   right: 70px;
 }
 .row {
-  margin: 50px 0;
+  margin: 20px 0;
 }
 
 .testim .dots {
@@ -1229,7 +1239,7 @@ section {
 .wrap-us {
   overflow: hidden;
   display: flex;
-  margin: 100px 0;
+  margin: 0;
 }
 .item-us {
   flex: 1 50%;
@@ -1245,24 +1255,72 @@ section {
 .wrap-s {
   overflow: hidden;
   box-shadow: 0px 0px 25px 0px rgb(170 170 170 / 25%);
-  padding: 50px;
+  padding: 40px 50px;
   text-align: left;
 }
 .txt--describe {
-  padding: 50px 20px;
-  text-align: left;
+  padding: 50px 20px 10px 20px;
+  text-align: center;
 }
 .sub {
-  color: var(--blue);
+  color: var(--gray);
   font-weight: 900;
   font-family: var(--primary-font);
   font-size: 2rem;
   padding: 20px 0;
   text-align: left;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 20px;
 }
 
 #banner {
-  margin-top: -10px;
+  margin-top: 50px;
   background-color: var(--gray);
-  padding: 10rem 10rem;
+  padding: 4rem 5rem;
+  /*background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);*/
+}
+.desktop {
+  display: block;
+}
+.mobile {
+  display: none;
+}
+
+/*Medida General phone*/
+@media only screen and (max-width: 667px) {
+  .item--h {
+    padding: 20px 10px;
+  }
+  #banner {
+    padding: 4rem 1rem;
+  }
+  .key-word:nth-child(3),
+  .key-word:nth-child(2) {
+    top: 80%;
+  }
+  .subtitle--es {
+    padding: 20px 0;
+  }
+  section {
+    padding: 20px;
+  }
+  .item-us {
+    flex: 1 100%;
+  }
+  .wrap-us {
+    overflow: hidden;
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  .gatsby-image-wrapper img  {
+    width: 80%;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
 }

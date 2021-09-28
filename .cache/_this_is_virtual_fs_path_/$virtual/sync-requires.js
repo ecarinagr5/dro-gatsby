@@ -4,6 +4,7 @@ const preferDefault = m => (m && m.default) || m
 
 
 exports.components = {
+  "component---cache-dev-404-page-js": preferDefault(require("/Users/carinagonzalez/Documents/wa/gastby/dro-gatsby/.cache/dev-404-page.js")),
   "component---src-pages-404-js": preferDefault(require("/Users/carinagonzalez/Documents/wa/gastby/dro-gatsby/src/pages/404.js")),
   "component---src-pages-contacto-js": preferDefault(require("/Users/carinagonzalez/Documents/wa/gastby/dro-gatsby/src/pages/contacto.js")),
   "component---src-pages-index-copy-js": preferDefault(require("/Users/carinagonzalez/Documents/wa/gastby/dro-gatsby/src/pages/index copy.js")),

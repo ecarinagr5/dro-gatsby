@@ -1,9 +1,9 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import * as React from "react";
+import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from "../components/layout";
+import Seo from "../components/seo";
 
 const IndexPage = () => (
   <Layout>
@@ -38,102 +38,182 @@ const IndexPage = () => (
         igual a igual en internet y optimizar el rendimiento de tu canal
         digital.
       </h3>
-      <div class="wrap-card">
-        <div class="item-card">
-          <h3>Consigue clientes al menor coste de adquisición (CPA) posible</h3>
-          <p>
-            aumentando la captación de clientes a través de un óptimo
-            posicionamiento orgánico, que sigue siendo la fuente de tráfico más
-            rentable.
-          </p>
-          <a href="" target="_self">
-            <p class="btn-call">conseguir clientes</p>
-          </a>
+    </section>
+    {/* consigue clientes */}
+    <section>
+      <div class="wrap-us">
+        <div class="item-us">
+          <StaticImage
+            src="../images/business.png"
+            width={400}
+            quality={95}
+            formats={["auto", "webp", "avif"]}
+            alt="A Gatsby astronaut"
+            style={{ marginBottom: `1.45rem` }}
+          />
         </div>
-        <div class="item-card">
-          <h3>
-            Saca el máximo rendimiento a tu principal activo: la base de
-            clientes
-          </h3>
-          <p>
-            Segmentálos según su comportamiento para dirigirles campañas
-            personalizadas de captación y fidelización, multiplicando así la
-            efectividad del impacto y los resultados.
-          </p>
-          <a href="" target="_self">
-            <p class="btn-call">segmentar clientes</p>
-          </a>
+        <div class="item-us">
+          <div class="wrap-s">
+            <div class="row">
+              <span class="sub">
+                Consigue clientes al menor coste de adquisición (CPA) posible
+              </span>
+              <p class="txt">
+                Aumentando la captación de clientes a través de un óptimo
+                posicionamiento orgánico, que sigue siendo la fuente de tráfico
+                más rentable.
+              </p>
+              <a href="" target="_self">
+                <p class="btn-call">conseguir clientes</p>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="item-card">
-          <h3>
-            Aumenta el valor promedio del cliente (CLTV) automatizando tus
-            campañas a clientes
-          </h3>
-          <p>
-            diseñando estrategias personalizadas que te ayuden a mejorar la tasa
-            de conversión, el ticket promedio y el CLTV.
-          </p>
-          <a href="" target="_self">
-            <p class="btn-call">diseñar mi estrategia</p>
-          </a>
+      </div>
+
+      {/* maximo */}
+      <div class="wrap-us">
+        <div class="item-us mobile">
+          <StaticImage
+            src="../images/segmentar.png"
+            width={400}
+            quality={95}
+            formats={["auto", "webp", "avif"]}
+            alt="A Gatsby astronaut"
+            style={{ marginBottom: `1.45rem` }}
+          />
         </div>
-        <div class="item-card">
-          <h3>
-            Ten a mano toda la información de tu negocio y tus campañas para
-            poder tomar decisiones
-          </h3>
-          <p>
-            a través de un panel de control que te permita ver como va tu
-            negocio de un solo vistazo y en tiempo real.
-          </p>
-          <a href="" target="_self">
-            <p class="btn-call">ver panel</p>
-          </a>
+        <div class="item-us">
+          <div class="wrap-s">
+            <div class="row">
+              <span class="sub">
+                Saca el máximo rendimiento a tu principal activo: la base de
+                clientes
+              </span>
+              <p class="txt">
+                Segmentálos según su comportamiento para dirigirles campañas
+                personalizadas de captación y fidelización, multiplicando así la
+                efectividad del impacto y los resultados.
+              </p>
+              <a href="" target="_self">
+                <p class="btn-call">segmentar clientes</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item-us desktop">
+          <StaticImage
+            src="../images/segmentar.png"
+            width={400}
+            quality={95}
+            formats={["auto", "webp", "avif"]}
+            alt="A Gatsby astronaut"
+            style={{ marginBottom: `1.45rem` }}
+          />
+        </div>
+      </div>
+      {/* aumenta */}
+      <div class="wrap-us">
+        <div class="item-us">
+          <StaticImage
+            src="../images/disenar.png"
+            width={400}
+            quality={95}
+            formats={["auto", "webp", "avif"]}
+            alt="A Gatsby astronaut"
+            style={{ marginBottom: `1.45rem` }}
+          />
+        </div>
+        <div class="item-us">
+          <div class="wrap-s">
+            <div class="row">
+              <span class="sub">
+                Aumenta el valor promedio del cliente (CLTV) automatizando tus
+                campañas a clientes
+              </span>
+              <p class="txt">
+                diseñando estrategias personalizadas que te ayuden a mejorar la
+                tasa de conversión, el ticket promedio y el CLTV.
+              </p>
+              <a href="" target="_self">
+                <p class="btn-call">diseñar mi estragía</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* aumenta */}
+      <div class="wrap-us">
+        <div class="item-us mobile">
+          <StaticImage
+            src="../images/panel.png"
+            width={400}
+            quality={95}
+            formats={["auto", "webp", "avif"]}
+            alt="A Gatsby astronaut"
+            style={{ marginBottom: `1.45rem` }}
+          />
+        </div>
+        <div class="item-us">
+          <div class="wrap-s">
+            <div class="row">
+              <span class="sub">
+                Ten a mano toda la información de tu negocio y tus campañas para
+                poder tomar decisiones
+              </span>
+              <p class="txt">
+                A través de un panel de control que te permita ver como va tu
+                negocio de un solo vistazo y en tiempo real.
+              </p>
+              <a href="" target="_self">
+                <p class="btn-call">diseñar mi estragía</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item-us desktop">
+          <StaticImage
+            src="../images/panel.png"
+            width={400}
+            quality={95}
+            formats={["auto", "webp", "avif"]}
+            alt="A Gatsby astronaut"
+            style={{ marginBottom: `1.45rem` }}
+          />
         </div>
       </div>
     </section>
 
     <section>
-      <div class="wrap-us">
-        <div class="item-us">
-          <h2>¿QUIENES SOMOS</h2>
-          <p class="txt--describe">
-            Tras más de 15 años en digital, trabajando tanto en agencia,
-            consultora como en cliente, decidimos crear agencia DRO para poner a
-            disposición de la PyME mexicana todo el expertise en ecommerce
-            adquirido en decenas de proyectos, tanto en España como en México.
-            Ponemos a disposición de la PyME mexicana el conocimiento y la
-            experiencia a las que solo pueden acceder las grandes compañías.
-            Queremos democratizar el mundo del ecommerce, para que los más
-            pequeños puedan competir con los grandes en igualdad de condiciones.
+      <h2>¿QUIENES SOMOS?</h2>
+      <p class="txt--describe">
+        Tras más de 15 años en digital, trabajando tanto en agencia, consultora
+        como en cliente, decidimos crear agencia DRO para poner a disposición de
+        la PyME mexicana todo el expertise en ecommerce adquirido en decenas de
+        proyectos, tanto en España como en México. Ponemos a disposición de la
+        PyME mexicana el conocimiento y la experiencia a las que solo pueden
+        acceder las grandes compañías. Queremos democratizar el mundo del
+        ecommerce, para que los más pequeños puedan competir con los grandes en
+        igualdad de condiciones.
+      </p>
+      <div class="wrap-card">
+        <div class="item-card">
+          <h3>MISIÓN</h3>
+          <p>
+            Ayudar a la PyME mexicana a optimizar el comportamiento de su canal
+            digital.
           </p>
         </div>
-        <div class="item-us">
-          <div class="wrap-s">
-            <div class="row">
-              {/* img */}
-              <span class="sub">MISIÓN</span>
-              <p class="txt">
-                Ayudar a la PyME mexicana a optimizar el comportamiento de su
-                canal digital.
-              </p>
-            </div>
-            <div class="row">
-              {/* IMAGE*/}
-              <span class="sub">VISIÓN</span>
-              <p class="txt">
-                Ser la agencia líder en DRO, Digital Return Optimization.
-              </p>
-            </div>
-            <div class="row">
-              {/* IMAGE*/}
-              <span class="sub">MISIÓN</span>
-              <p class="txt">
-                Honestidad, compromiso, independencia y servicio en busca
-                siempre de aportar el máximo valor a nuestros clientes.
-              </p>
-            </div>
-          </div>
+        <div class="item-card">
+          <h3>VISIÓN</h3>
+          <p>Ser la agencia líder en DRO, Digital Return Optimization.</p>
+        </div>
+        <div class="item-card">
+          <h3>VALORES</h3>
+          <p>
+            Honestidad, compromiso, independencia y servicio en busca siempre de
+            aportar el máximo valor a nuestros clientes.
+          </p>
         </div>
       </div>
     </section>
@@ -219,6 +299,6 @@ const IndexPage = () => (
       </div>
     </section>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
