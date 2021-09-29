@@ -135,6 +135,14 @@ small {
   border-bottom: 1px solid var(--blue);
   width: 200px;
 }
+.txt-mini{
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+}
+#quienesSomos{
+  margin-bottom: 50px;
+}
 @keyframes atom {
   0% {
     transform: rotate(0deg) scale(1);
@@ -450,7 +458,7 @@ a:hover {
 }
 .sub-itemm span {
   color: #fff;
-  font-family: var(--primary-font);
+  font-family: var(--second--font);
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 900;
@@ -461,7 +469,7 @@ a:hover {
 }
 .logo {
   font-family: var(--primary-font);
-  color: var(--blue);
+  color: var(--blue) !important;
   font-size: 2.5rem;
   font-weight: 900;
 }
@@ -509,7 +517,7 @@ section {
   position: relative;
   text-align: center;
 }
-#our-services p {
+#quehacemos p {
   color: var(--gray);
   font-size: 12px;
   padding: 15px;
@@ -519,7 +527,7 @@ section {
 }
 
 .item-card h3 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -584,29 +592,29 @@ section {
 
 /* start of our services section */
 
-#our-services {
+#quehacemos {
   min-height: 100vh;
   padding-top: 25vh;
 }
 
 /* OUR SEERVICES LEFT SIDE */
 
-#our-services .desc {
+#quehacemos .desc {
   width: 33%;
   float: left;
 }
 
-#our-services .desc .heading h1 {
+#quehacemos .desc .heading h1 {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1.4px;
   margin-bottom: 30px;
 }
 
-#our-services .desc .text {
+#quehacemos.desc .text {
   color: #bababa;
 }
-#our-services .desc .text p{
+#quehacemos .desc .text p{
  font-size: 1.2rem;
  margin-top: 20px;
  line-height: 1;
@@ -615,21 +623,21 @@ section {
 
 /* OUR SERVICES RIGHT SIDE */
 
-#our-services .services {
+#quehacemos .services {
   width: 67%;
   float: left;
   margin-left: 40%;
   margin-top: -14%;
 }
 
-#our-services .services .column {
+#quehacemos .services .column {
   float: left;
   margin-right: 110px;
   transform: rotate(45deg);
   transition: transform 0.3s ease;
 }
 
-#our-services .services .column .service {
+#quehacemos .services .column .service {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -640,20 +648,20 @@ section {
   margin-bottom: 7px;
 }
 
-#our-services .services .column .service:hover {
+#quehacemos .services .column .service:hover {
   background: var(--gray-light);
   color: var(--blue);
   border: 1px solid var(--blue);
 }
 
-#our-services .services .column .service:hover .service-icon {
+#quehacemos .services .column .service:hover .service-icon {
   color: #fff;
 }
 
-#our-services .services .column .service:hover .service-desc {
+#quehacemos .services .column .service:hover .service-desc {
   color: #fff;
 }
-#our-services .services .column .service .service-desc {
+#quehacemos .services .column .service .service-desc {
   transform: rotate(-45deg);
   text-align: center;
   text-transform: uppercase;
@@ -666,7 +674,7 @@ section {
   color: #fff;
 }
 
-#our-services .services .column .service .service-desc .service-icon {
+#quehacemos .services .column .service .service-desc .service-icon {
   font-size: 20px;
   margin-bottom: 5px;
   color: #f57469;
@@ -677,26 +685,26 @@ section {
 /* media query */
 
 @media all and (max-width: 967px) {
-  #our-services {
+  #quehacemos {
     padding-top: 60px;
   }
 
-  #our-services .desc {
+  #quehacemos .desc {
     width: 100%;
     float: none;
     margin-bottom: 30px;
   }
 
-  #our-services .services {
+  #quehacemos .services {
     width: 100%;
   }
 
-  #our-services .services .column {
+  #quehacemos .services .column {
     transform: rotate(0deg);
     margin-right: 10px;
   }
 
-  #our-services .services .column .service .service-desc {
+  #quehacemos .services .column .service .service-desc {
     transform: rotate(0deg);
   }
 }
@@ -1343,7 +1351,165 @@ section {
 .mobile {
   display: none;
 }
+.txt-highlight{
+  color: var(--blue);
+}
+.mobile-redes{
+  display: none;
+}
+.wrap-redes{
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 50px;
+}
+.item-redes {
+  flex: 1 1 auto;
+}
+.mobile-header {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mobile-header div {
+  flex: 1 1 auto;
+}
+.mobile-header div:nth-child(1) {
+  text-align: left;
+}
+.mobile-header div:nth-child(2) {
+  text-align: right;
+}
 
+/*menu*/
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 25px;
+  left: 120px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: var(--blue);
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
 /*Medida General phone*/
 @media only screen and (max-width: 667px) {
   .item--h {
@@ -1351,6 +1517,10 @@ section {
   }
   #banner {
     padding: 4rem 1rem;
+    margin-top: 0;
+  }
+  .txt-desc{
+    font-size: 1.4rem;
   }
   .key-word:nth-child(3),
   .key-word:nth-child(2) {
@@ -1379,6 +1549,39 @@ section {
   }
   .mobile {
     display: block;
+  }
+  .sub{
+    font-size: 1.4rem;
+  }
+  .btn-call{
+    width: 100%;
+  }
+  .wrap-menu .item--menu:nth-child(2) {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: var(--gray);
+    top: 0;
+    left: 0;
+    font-size: 2.3rem;
+  }
+  .wrap-menu .item--menu .sub-itemm {
+    text-align: left;
+    height: 50px;
+    width: 80%;
+  }
+  .mobile-redes{
+    display: block;
+  }
+  .sub-itemm span{
+    font-size: 1.2rem;
+  }
+  .line-help{
+    border-bottom: 2px solid var(--blue);
+  }
+  .logo{
+    padding-top: 20px;
   }
 }
 

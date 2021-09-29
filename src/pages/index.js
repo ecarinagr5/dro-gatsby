@@ -186,8 +186,8 @@ const IndexPage = () => (
       <div id="quienesSomos"></div>
     </section>
     {/* Quienes somos*/}
-    <section>
-      <h2>¿QUIENES SOMOS?</h2>
+    <section >
+      <h2>¿QUIÉNES SOMOS?</h2>
       <p class="txt--describe">
         Tras más de 15 años en digital, trabajando tanto en agencia, consultora
         como en cliente, decidimos crear agencia DRO para poner a disposición de
@@ -220,11 +220,11 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section id="our-services">
+    <section id="quehacemos">
       <div class="container">
         <div class="desc">
           <div class="heading">
-            <h2>QUE HACEMOS</h2>
+            <h2>¿QUÉ HACEMOS?</h2>
           </div>
           <div class="text">
             <p>
