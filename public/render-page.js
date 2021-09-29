@@ -11462,24 +11462,24 @@ module.exports = withSideEffect;
 /***/ }),
 
 /***/ "react-dom/server":
-/*!********************************************************************************************************!*\
-  !*** external "/Users/carinagonzalez/Documents/wa/gastby/dro-gatsby/node_modules/react-dom/server.js" ***!
-  \********************************************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** external "/Users/bc53790/Documents/WS/gatsby/dro-gatsby/node_modules/react-dom/server.js" ***!
+  \*************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/carinagonzalez/Documents/wa/gastby/dro-gatsby/node_modules/react-dom/server.js");
+module.exports = require("/Users/bc53790/Documents/WS/gatsby/dro-gatsby/node_modules/react-dom/server.js");
 
 /***/ }),
 
 /***/ "react":
-/*!***************************************************************************************************!*\
-  !*** external "/Users/carinagonzalez/Documents/wa/gastby/dro-gatsby/node_modules/react/index.js" ***!
-  \***************************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** external "/Users/bc53790/Documents/WS/gatsby/dro-gatsby/node_modules/react/index.js" ***!
+  \********************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/carinagonzalez/Documents/wa/gastby/dro-gatsby/node_modules/react/index.js");
+module.exports = require("/Users/bc53790/Documents/WS/gatsby/dro-gatsby/node_modules/react/index.js");
 
 /***/ }),
 

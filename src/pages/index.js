@@ -8,28 +8,29 @@ import Seo from "../components/seo";
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
+
     <section id="banner">
-      <div class="wrap-header">
-        <div class="item--h">
-          <div>
-            <h1>DRO</h1>
-            <p class="txt-desc">
-              Multiplica tus ventas en digital actuando sobre los tres pilares
-              básicos del crecimiento
-            </p>
+        <div class="wrap-header">
+          <div class="item--h">
+            <div>
+              <h1>DRO</h1>
+              <p class="txt-desc">
+                Multiplica tus ventas en digital actuando sobre los tres pilares
+                básicos del crecimiento
+              </p>
+            </div>
+          </div>
+          <div class="item--h">
+            <div class="key-word">SEO</div>
+            <div class="key-word">SEGMENTACIÓN DE CLIENTES</div>
+            <div class="key-word">MARKETING AUTOMATION</div>
+            <div class="atom">
+              <div class="electron"></div>
+              <div class="electron-alpha"></div>
+              <div class="electron-omega"></div>
+            </div>
           </div>
         </div>
-        <div class="item--h">
-          <div class="key-word">SEO</div>
-          <div class="key-word">SEGMENTACIÓN DE CLIENTES</div>
-          <div class="key-word">MARKETING AUTOMATION</div>
-          <div class="atom">
-            <div class="electron"></div>
-            <div class="electron-alpha"></div>
-            <div class="electron-omega"></div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <section>
@@ -136,7 +137,7 @@ const IndexPage = () => (
                 tasa de conversión, el ticket promedio y el CLTV.
               </p>
               <a href="" target="_self">
-                <p class="btn-call">diseñar mi estragía</p>
+                <p class="btn-call">diseñar mi estrategía</p>
               </a>
             </div>
           </div>
@@ -166,7 +167,7 @@ const IndexPage = () => (
                 negocio de un solo vistazo y en tiempo real.
               </p>
               <a href="" target="_self">
-                <p class="btn-call">diseñar mi estragía</p>
+                <p class="btn-call">diseñar mi estrategía</p>
               </a>
             </div>
           </div>
@@ -182,8 +183,9 @@ const IndexPage = () => (
           />
         </div>
       </div>
+      <div id="quienesSomos"></div>
     </section>
-
+    {/* Quienes somos*/}
     <section>
       <h2>¿QUIENES SOMOS?</h2>
       <p class="txt--describe">
@@ -235,20 +237,28 @@ const IndexPage = () => (
           <div class="column" id="column-1">
             <div class="service">
               <div class="service-desc">
-                <i class="service-icon fas fa-flask"> </i>
-                <p class="service-txt">bussiniss intelegince</p>
+              <StaticImage
+                  src="../images/iconos/nube.png"
+                  width={40}
+                  quality={95}
+                  formats={["auto", "webp", "avif"]}
+                  alt="A Gatsby astronaut"
+                  style={{ marginBottom: `1.45rem` }}
+                />
+                <p class="service-txt">1.	Conseguimos el menor coste de adquisición de clientes posible a través del trafico orgánico o SEO</p>
               </div>
             </div>
             <div class="service">
               <div class="service-desc">
-                <i class="service-icon fas fa-bullhorn"> </i>
-                <p class="service-txt">digital marketing</p>
-              </div>
-            </div>
-            <div class="service">
-              <div class="service-desc">
-                <i class="service-icon far fa-lightbulb"> </i>
-                <p class="service-txt">PRODUCT DEVELOPMENT</p>
+              <StaticImage
+                  src="../images/iconos/send.png"
+                  width={40}
+                  quality={95}
+                  formats={["auto", "webp", "avif"]}
+                  alt="A Gatsby astronaut"
+                  style={{ marginBottom: `1.45rem` }}
+                />
+                <p class="service-txt">2.	Segmentamos y tratamos a los clientes según su comportamiento en la web. Poniendo foco en el 20% de clientes que nos aportan el 80% de las ventas, mediante la oportuna segmentación de clientes y análisis de la data.</p>
               </div>
             </div>
           </div>
@@ -256,37 +266,35 @@ const IndexPage = () => (
           <div class="column" id="column-2">
             <div class="service">
               <div class="service-desc">
-                <i class="service-icon fas fa-wrench"> </i>
-                <p class="service-txt">CRM CUSTOMAIZATION</p>
+              <StaticImage
+                  src="../images/iconos/transferir.png"
+                  width={40}
+                  quality={95}
+                  formats={["auto", "webp", "avif"]}
+                  alt="A Gatsby astronaut"
+                  style={{ marginBottom: `1.45rem` }}
+                />
+                <p class="service-txt">3.	Aumentamos la tasa de conversión,  la recurrencia de compra, el ticket promedio y el tiempo de vida del cliente o Customer Lifetime Value.</p>
               </div>
             </div>
             <div class="service">
               <div class="service-desc">
-                <i class="service-icon fas fa-database"> </i>
-                <p class="service-txt">BUSINESS INTELLIGENCE</p>
+              <StaticImage
+                  src="../images/iconos/dato.png"
+                  width={40}
+                  quality={95}
+                  formats={["auto", "webp", "avif"]}
+                  alt="A Gatsby astronaut"
+                  style={{ marginBottom: `1.45rem` }}
+                />
+                <p class="service-txt">4.	Tomamos decisiones basadas en data de una manera sencilla y rapida, mediante paneles de control que reflejen los principales kpis del negocio</p>
               </div>
             </div>
-            <div class="service">
-              <div class="service-desc">
-                <i class="service-icon fas fa-chart-pie"> </i>
-                <p class="service-txt">DATA AQUSITION</p>
-              </div>
-            </div>
+
           </div>
 
           <div class="column" id="column-2">
-            <div class="service">
-              <div class="service-desc">
-                <i class="service-icon fas fa-tasks"> </i>
-                <p class="service-txt">PROJECT MAGNEMENT</p>
-              </div>
-            </div>
-            <div class="service">
-              <div class="service-desc">
-                <i class="service-icon fas fa-certificate"> </i>
-                <p class="service-txt">SEO/SEM</p>
-              </div>
-            </div>
+
             <div class="service hidden">
               <div class="service-desc">
                 <i class="service-icon"> </i>

@@ -9,7 +9,8 @@
   --gray-light: #d5d5d5;
   --gray--medium: #898989;
   --black: #1a222a;
-  --primary-font: "Oswald", sans-serif;
+  --title-font: "Oswald", sans-serif;
+  --primary-font:"Google Sans",sans-serif;
   /*--primary-font: "Roboto", sans-serif;*/
   --second--font: "Montserrat", sans-serif;
   --atom-size: 180px;
@@ -22,6 +23,10 @@
   --electron-speed: 1.2s;
   --electron-speed-alpha: 1s;
   --electron-speed-omega: 0.8s;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 *,
 *:after,
@@ -41,10 +46,10 @@ h1 {
   font-size: 8rem;
   color: var(--blue);
   font-weight: 600;
-  font-family: var(--primary-font);
+  font-family: var(--title-font);
 }
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--blue);
   font-weight: 600;
   font-family: var(--primary-font);
@@ -62,6 +67,9 @@ li {
   left: 0;
   z-index: -1;
 }
+a{
+  text-decoration: none;
+}
 
 svg.svg path {
   transition: 0.1s;
@@ -70,7 +78,9 @@ svg.svg path {
 svg.svg:hover path {
   d: path("M 800 300 Q 400 250 0 300 L 0 0 L 800 0 L 800 300 Z");
 }
-
+a:hover {
+  text-decoration: none;
+}
 body {
   background: #fff;
   color: #333;
@@ -120,6 +130,10 @@ small {
   animation: 10s atom infinite cubic-bezier(1, 0.25, 0, 0.75);
   margin: 30px auto;
   text-align: center;
+}
+.sub-line{
+  border-bottom: 1px solid var(--blue);
+  width: 200px;
 }
 @keyframes atom {
   0% {
@@ -362,15 +376,7 @@ footer {
   place-items: center;
 }
 a {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: smaller;
-  font-weight: lighter;
-  text-decoration: none;
-  padding: 0.6rem 0.8rem;
-  border-radius: 0.3rem;
-  color: rgba(255, 255, 255, 0.25);
-  background: rgba(0, 0, 0, 0);
+
   transition: all 0.35s ease-in-out;
 }
 a:hover {
@@ -381,11 +387,13 @@ a:hover {
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
+  transform: skewY(7deg);
+  
 }
 .item--h {
   flex: 1 30%;
   text-align: left;
-  padding: 20px 100px;
+  padding: 20px 10px;
   position: relative;
 }
 .item--h:nth-child(2) {
@@ -396,9 +404,10 @@ a:hover {
   margin-top: 40px;
 }
 .txt-desc {
-  font-size: 1.4rem;
+  font-size: 2rem;
   color: #fff;
   font-weight: 900;
+  line-height: 1;
 }
 .wrap-menu {
   overflow: hidden;
@@ -422,21 +431,39 @@ a:hover {
   text-align: right;
 }
 .wrap-menu .item--menu .sub-itemm {
-  margin: 0 10px;
+  margin: 0 2%;
   font-family: var(--second--font);
   padding-top: 20px !important;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: all 0.3s ease;                  
+    -moz-transition: all 0.3s ease;                 
+    -o-transition: all 0.3s ease;   
+    -ms-transition: all 0.3s ease;          
+    transition: all 0.3s ease;
+    height: 25px;
+}
+
+.wrap-menu .item--menu .sub-itemm:hover{
+  border-bottom: 3px solid var(--blue);
+  background-color: transparent;
+  color:var(--blue);
 }
 .sub-itemm span {
   color: #fff;
-  font-family: var(--second--font);
+  font-family: var(--primary-font);
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 900;
+}
+.sub-itemm span:hover{
+  color: var(--blue);
+  background-color: transparent;
 }
 .logo {
   font-family: var(--primary-font);
   color: var(--blue);
   font-size: 2.5rem;
+  font-weight: 900;
 }
 .key-word {
   font-family: var(--primary-font);
@@ -445,6 +472,7 @@ a:hover {
   position: absolute;
   width: 150px;
   line-height: 1;
+  font-weight: 900;
 }
 .key-word:nth-child(1) {
   top: 0;
@@ -455,6 +483,7 @@ a:hover {
 .key-word:nth-child(2) {
   top: 40%;
   left: 0;
+
 }
 .key-word:nth-child(3) {
   top: 40%;
@@ -467,25 +496,32 @@ section {
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 .item-card {
   /*border: 1px solid var(--gray--medium);*/
   border-radius: 10px;
   flex: 1 20%;
   margin: 20px 5px;
-  padding: 60px 40px;
-  text-align: left;
+  padding: 20px 40px;
   line-height: 1.2;
   box-shadow: 0px 0px 25px 0px rgb(170 170 170 / 25%);
   position: relative;
+  text-align: center;
 }
 #our-services p {
   color: var(--gray);
+  font-size: 12px;
+  padding: 15px;
+  font-size: 11px;
+  padding: 10px;
+  margin-top: -13px;
 }
 
 .item-card h3 {
   font-size: 2rem;
   margin-bottom: 20px;
+  text-align: center;
 }
 .item-card svg {
   text-align: right;
@@ -495,10 +531,12 @@ section {
   margin: 20px 0;
 }
 .subtitle--es {
-  padding: 70px;
+  padding: 10px;
   line-height: 1;
   font-size: 2rem;
+  margin-top: 10%;
 }
+
 .btn-call {
   border: 3px solid var(--blue);
   border-radius: 10px;
@@ -508,6 +546,7 @@ section {
   font-size: 1rem;
   padding: 10px;
   width: 200px;
+  font-weight: 900;
   text-align: center;
   box-shadow: 0px 0px 25px 0px rgb(170 170 170 / 25%);
   margin-top: 30px;
@@ -567,17 +606,25 @@ section {
 #our-services .desc .text {
   color: #bababa;
 }
+#our-services .desc .text p{
+ font-size: 1.2rem;
+ margin-top: 20px;
+ line-height: 1;
+ text-align: center;
+}
 
 /* OUR SERVICES RIGHT SIDE */
 
 #our-services .services {
   width: 67%;
   float: left;
+  margin-left: 40%;
+  margin-top: -14%;
 }
 
 #our-services .services .column {
   float: left;
-  margin-right: 60px;
+  margin-right: 110px;
   transform: rotate(45deg);
   transition: transform 0.3s ease;
 }
@@ -586,22 +633,26 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120px;
-  height: 120px;
+  width: 250px;
+  height: 250px;
   background: #ffffff;
   transition: all 0.1s ease;
   margin-bottom: 7px;
 }
 
 #our-services .services .column .service:hover {
-  background: var(--gray--medium);
-  color: #fff;
+  background: var(--gray-light);
+  color: var(--blue);
+  border: 1px solid var(--blue);
 }
 
 #our-services .services .column .service:hover .service-icon {
   color: #fff;
 }
 
+#our-services .services .column .service:hover .service-desc {
+  color: #fff;
+}
 #our-services .services .column .service .service-desc {
   transform: rotate(-45deg);
   text-align: center;
@@ -609,6 +660,10 @@ section {
   font-size: 10px;
   font-weight: bold;
   transition: transform 0.3s ease;
+  color: #fff;
+}
+.service-desc:hover {
+  color: #fff;
 }
 
 #our-services .services .column .service .service-desc .service-icon {
@@ -1275,11 +1330,13 @@ section {
 }
 
 #banner {
-  margin-top: 50px;
+  margin-top: -90px;
   background-color: var(--gray);
-  padding: 4rem 5rem;
+  padding: 14rem 5rem 5rem 5rem;
+  transform: skewY(-7deg);
   /*background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);*/
 }
+
 .desktop {
   display: block;
 }
@@ -1324,3 +1381,6 @@ section {
     display: block;
   }
 }
+
+
+

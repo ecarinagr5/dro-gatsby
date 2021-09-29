@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => (
           </a>
         </div>
         <div class="sub-itemm">
-          <a href="" target="_self">
+          <a href="#quienesSomos" target="_self">
             <span>¿Quienes somos?</span>
           </a>
         </div>
